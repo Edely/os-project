@@ -8,9 +8,14 @@ class Algorithm():
             self.process[i] = None
 
         
-    def duration_of_process(self, process, duration):
+    def duration_of_process(self):
         '''
-        Give the duration of each process.
+        Gives the duration of each process.
         '''        
         for k,v in self.process.items():
+            while type(self.process[k]) is not int:            
+                try:
+                    self.process[k] = int(input('Insert the duration of the process {}:\n'.format(k)))
+                except:
+                    print('Duration must be an integer.')
             print('Duration of process: {} is {}'.format(k, v))

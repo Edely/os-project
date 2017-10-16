@@ -13,3 +13,5 @@ class Fifo(Algorithm):
         self.name = 'First-In First-Out'
         
         super(Fifo, self).__init__()
+        
+    
