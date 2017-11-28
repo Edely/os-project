@@ -20,15 +20,19 @@ if __name__ == '__main__':
     
     option_algorithm = None
     
-    
+    for k, v in algorithms.items():
+        print("{}: {}".format(k, algorithms[k]))           
+            
     while type(option_algorithm) is not int or option_algorithm < 0 or option_algorithm > 3:
-        
-        for k, v in algorithms.items():
-            print("{}: {}".format(k, algorithms[k]))           
+                
         try:
-            option_algorithm = int(input('\nChoose the algorithm:\n'))         
+            option_algorithm = int(input('\nChoose the algorithm:\n')) 
         except(KeyboardInterrupt):
             quit()
+        except:
+            print("Invalid Option.\n")
+            for k, v in algorithms.items():
+                print("{}: {}".format(k, algorithms[k]))            
         
         
     if option_algorithm == 0:
@@ -41,8 +45,9 @@ if __name__ == '__main__':
         algo = ROUNDROBIN()
 
 
-
-        
+    
+def running_scheduler():
+    pass
         
         
         
