@@ -1,4 +1,4 @@
-from algorithm import Algorithm
+from .algorithm import Algorithm
 #code to implement the simulation of the First-In First-Out algorithm.
 # create class
 #funcao para criar processos

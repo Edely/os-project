@@ -1,4 +1,4 @@
-from algorithm import Algorithm
+from .algorithm import Algorithm
 
 class SJF(Algorithm):
     '''Implementation for simulating the Shortest Job First algorithm for scheduling process in a Operating System.'''

@@ -1,4 +1,4 @@
-from algorithm import Algorithm
+from .algorithm import Algorithm
 
 class ROUNDROBIN(Algorithm):
     '''Implementation for simulating the Round Robin algorithm for scheduling process in a Operating System.'''

@@ -24,5 +24,4 @@ class Algorithm(object):
                     print('Duration must be an integer.')
         for k, v in self.process.items():
             print("Processo {} - Duration: {}".format(k, self.process[k]))     
-            
-    
+        

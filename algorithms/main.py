@@ -1,12 +1,10 @@
-#!/usr/bin/python
+from .algorithm import Algorithm
+from .fifo import FIFO
+from .edf import EDF
+from .sjf import SJF
+from .roundrobin import ROUNDROBIN
 
-from algorithm import Algorithm
-from fifo import FIFO
-from edf import EDF
-from sjf import SJF
-from roundrobin import ROUNDROBIN
-
-if __name__ == '__main__':
+def select_algorithm():
     '''
     It selects the algorithm used by the programm and initialize.
     '''
@@ -45,16 +43,14 @@ if __name__ == '__main__':
         algo = ROUNDROBIN()
 
 
+def select_algorithm():
+    '''
+    
+    '''
+
     
 def running_scheduler():
-    pass
-        
-        
-        
-        
-        
-        
-        
+    print('running_scheduler')
         
         
         

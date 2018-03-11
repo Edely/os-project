@@ -1,4 +1,4 @@
-from algorithm import Algorithm
+from .algorithm import Algorithm
 
 class EDF(Algorithm):
     '''Implementation for simulating the First-In First-Out algorithm for scheduling process in a Operating System.'''
