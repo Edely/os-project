@@ -4,7 +4,7 @@ from .edf import EDF
 from .sjf import SJF
 from .roundrobin import ROUNDROBIN
 
-def select_algorithm():
+def selects_algorithm():
     '''
     It selects the algorithm used by the programm and initialize.
     '''
@@ -42,12 +42,7 @@ def select_algorithm():
     if option_algorithm == 3:
         algo = ROUNDROBIN()
 
-
-def select_algorithm():
-    '''
-    
-    '''
-
+    return(algo)    
     
 def running_scheduler():
     print('running_scheduler')

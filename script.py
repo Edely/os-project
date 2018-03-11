@@ -1,8 +1,11 @@
+# -*- coding: utf-8 -*-
 import algorithms
 from algorithms import Algorithm
-from algorithms import FIFO
 from algorithms.main import running_scheduler
-from algorithms.main import select_algorithm
+from algorithms.main import selects_algorithm
 
-select_algorithm()
-running_scheduler()
+algoritmo = selects_algorithm()
+algoritmo.number_of_process = 2
+algoritmo.duration_of_process()
+
+#running_scheduler()
