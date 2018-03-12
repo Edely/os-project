@@ -1,3 +1,4 @@
+import time
 from .algorithm import Algorithm
 from .fifo import FIFO
 from .edf import EDF
@@ -44,8 +45,6 @@ def selects_algorithm():
 
     return(algo)    
     
-def running_scheduler():
-    print('running_scheduler')
         
         
         
